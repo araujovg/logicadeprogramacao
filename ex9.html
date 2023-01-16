@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$)
+    e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45.
+
+ -->
+
+<script>
+    
+    var valorReal = Number.parseFloat(prompt("Digite uma quantia em Reais(R$)"));
+
+    var valorDolar = valorReal / 3.45;
+    
+    document.write("Você pode comprar " + valorDolar.toLocaleString('eng-US', { style: 'currency', currency: 'USD' }));
+    document.write("<br>");
+    
+
+</script>

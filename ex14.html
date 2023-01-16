@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    A locadora de carros precisa da sua ajuda para cobrar seus serviços. 
+    Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado 
+    e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, 
+    sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.
+
+ -->
+
+<script>
+    
+    var kmPercorridos = Number.parseFloat(prompt("Digite a quilometragem percorrida: "));
+    var dias = Number.parseFloat(prompt("Digite a quantidade de dias que durou a locação: "));
+    
+    var valorPorDiaLocao = dias * 90;
+
+    var valorPelaQuilometragem = kmPercorridos * 0.20;
+
+    var valorLocacao = valorPorDiaLocao + valorPelaQuilometragem;
+    
+    document.write("Você alugou o carro por: " + dias + " dias");
+    document.write("<hr>");
+    document.write("Você percorreu: " + kmPercorridos + "  KM");
+    document.write("<hr>");
+    document.write("O valor da sua locacao foi é de: " + valorLocacao.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+
+</script>

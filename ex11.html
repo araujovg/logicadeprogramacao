@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    Desenvolva uma lógica que leia os valores de A, B e C de uma equação do segundo grau e mostre o valor de Delta.
+
+ -->
+
+<script>
+    
+    var a = Number.parseFloat(prompt("Digite o valor de A"));
+    var b = Number.parseFloat(prompt("Digite o valor de B"));
+    var c = Number.parseFloat(prompt("Digite o valor de C"));
+
+    var delta = Math.pow(-b, 2) - (4 * a * c);
+    
+    document.write("O valor do delta é: " + delta);
+    document.write("<br>");    
+
+</script>

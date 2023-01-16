@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.
+
+ -->
+
+<script>
+    
+    var preco = Number.parseFloat(prompt("Digite o valor do produto"));
+    var desconto = preco * (5/100)
+    var precoComDesconto = preco - desconto;
+    
+    document.write("O valor do produto é: " + preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<br>");
+    document.write("Você recebeu um desconto de: " + desconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<br>");
+    document.write("Preço com desconto: " + precoComDesconto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+</script>

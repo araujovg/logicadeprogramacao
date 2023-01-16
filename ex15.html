@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    Crie um programa que leia o número de dias trabalhados em um mês e mostre
+    o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha
+     R$25 por hora trabalhada.
+
+ -->
+
+<script>
+    
+    var diasTRabalhados = Number.parseFloat(prompt("Quantos dias você trabalhou esse mês: "));
+    
+    var valorPorDia = 8 * 25;
+
+    var valorMes = diasTRabalhados * valorPorDia;
+
+    
+    document.write("Você trabalhou por: " + diasTRabalhados + " dias");
+    document.write("<hr>");
+    document.write("Você ganhou: " + valorPorDia.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + " por dia");
+    document.write("<hr>");
+    document.write("O seu salário será de: " + valorMes.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<hr>");
+
+</script>

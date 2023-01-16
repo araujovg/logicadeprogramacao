@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    Faça um algoritmo que leia a largura e altura de uma parede,
+    calcule e mostre a área a ser pintada e a quantidade de tinta 
+    necessária para o serviço, sabendo que cada litro de tinta pinta
+    uma área de 2metros quadrados.
+
+ -->
+
+<script>
+    
+    var largura = Number.parseFloat(prompt("Digite a largura da parede"));
+    var altura = Number.parseFloat(prompt("Digite a altura da parede"));
+
+    var areaParede = largura * altura;
+
+    var qtdTinta = areaParede / 2;
+    
+    document.write("A quantidade de litros de tinta necessária para pintar uma parede de " + areaParede + "metros quadrados é: ");
+    document.write("<br>");
+    document.write(qtdTinta + " Litros");
+    
+
+</script>

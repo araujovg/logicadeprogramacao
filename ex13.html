@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ 
+    Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.
+
+ -->
+
+<script>
+    
+    var salario = Number.parseFloat(prompt("Digite o valor do seu salário"));
+    var aumento = salario * (15/100)
+    var novoSalario = salario + aumento;
+    
+    document.write("O valor do seu salário era: " + salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<br>");
+    document.write("Você recebeu um aumento de: " + aumento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    document.write("<br>");
+    document.write("Seu novo salário: " + novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+</script>

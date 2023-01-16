@@ -1,0 +1,46 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- 
+ Desenvolva um programa que leia uma distância em metros e mostre os valores
+relativos em outras medidas.
+
+Ex:
+Digite uma distância em metros: 185.72
+A distância de 185.7m corresponde a:
+
+0.18572Km
+1.8572Hm
+18.572Dam
+
+1857.2dm
+18572.0cm
+185720.0mm
+
+ -->
+
+<script>
+    
+    var distancia = Number.parseFloat(prompt("Digite uma distância em metros"));
+    
+    document.write(distancia / 1000 + "Km");
+    document.write("<br>");
+
+    document.write(distancia / 100 + "Hm");
+    document.write("<br>");
+
+    document.write(distancia / 10 + "Dam");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write(distancia * 1000 + "mm");
+    document.write("<br>");
+
+    document.write(distancia * 100 + "cmm");
+    document.write("<br>");
+
+    document.write(distancia * 10 + "dm");
+    document.write("<br>");
+    
+
+</script>
