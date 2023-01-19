@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+    var nota1 = Number(prompt("Insira a primeira nota"));
+    var nota2 = Number(prompt("Insira a segunda nota"));
+    var nota3 = Number(prompt("Insira a terceira nota"));
+    var nota4 = Number(prompt("Insira a quarta nota"));
+
+    var porcentagemDeFaltas = Number(prompt("Insira a porcentagem de faltas"));
+
+    var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+    if(media < 5 || porcentagemDeFaltas >= 25){
+        document.write("Aluno reprovado");
+    }
+
+    if(media >= 5 && media < 7) {
+        var trabalhoRecuperacao = confirm("Fez o trabalho de recuperação?");
+        if(trabalhoRecuperacao) {
+            document.write("Aluno em recuperação");
+        }
+    }
+
+    if(media >= 5 && media < 7) {
+        //var trabalhoRecuperacao = confirm("Fez o trabalho de recuperação?");
+        if(confirm("Fez o trabalho de recuperação?")) {
+            document.write("Aluno em recuperação");
+        }
+    }
+
+    if(media > 7 && porcentagemDeFaltas < 25) {
+        document.write("Aluno reprovado");
+    }
+
+    if(media > 7) {
+        if(porcentagemDeFaltas < 25){
+            document.write("Aluno reprovado");
+        }
+    }
+
+</script>
